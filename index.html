@@ -6,16 +6,17 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
+
+		<nav class="nav">
+			<a class="nav-logo">
 				<img src="logo.jpg" width="" height="" alt="Логотип города Седона">
 			</a>
 
-			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="media.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостиницы</a></li>
+			<ul class="nav-list">
+				<li class="nav-item"><a href="info.html">Информация</a></li>
+				<li class="nav-item"><a href="media.html">Фото и видео</a></li>
+				<li class="nav-item"><a href="map.html">Карта штата</a></li>
+				<li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 
 		</nav>
@@ -25,79 +26,112 @@
 
 		<h1 class="visually-hidden">Сайт города Седона</h1>
 
+		<!-- Вопрос по блоку с фотографией: я предполагаю, что фото это фоновое изображение, а текст - это контентное изображение, которое накладывается на фоновое. Насколько это верно и куда при этом я буду вставлять фон? Мне надо для этого обернуть img в div например?!-->
+
 		<img src="welcome.png" width="" height="" alt="Добро пожаловать в Седону">
 
-		<p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-		<p class="reason">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+		<div class="subtitle">
 
-		<ul>
-			<li>
-				<h2 class="slogan">Настоящий городок</h2>
-				<p class="reason">- №1 -</p>
-				<p class="reason">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+			<p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+			<p class="text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 
-				<ul>
-					<li>
+		</div>
+
+		<ul class="features">
+
+			<li class="features-list">
+
+				<h2 class="title">Настоящий городок</h2>
+				<p class="text">- №1 -</p>
+				<p class="text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				<img src="#" width="" height="" alt="Город Седона">
+
+			</li>
+
+			<li class="features-list">
+				<ul class="features-items">
+					<li class="features-item">
+
 						<img src="home.png" width="" height="" alt="Жилье">
-						<h2 class="slogan">Жилье</h2>
-						<p class="reason">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						<h2 class="title">Жилье</h2>
+						<p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
-					<li>
+					<li class="features-item">
 						<img src="food.png" width="" height="" alt="Еда">
-						<h2 class="slogan">Еда</h2>
-						<p class="reason">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						<h2 class="title">Еда</h2>
+						<p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
-					<li>
+					<li class="features-item">
 						<img src="souvenir.png" width="" height="" alt="Сувениры">
-						<h2 class="slogan">Сувениры</h2>
-						<p class="reason">Не только китайского, но и местного производства!</p>
+						<h2 class="title">Сувениры</h2>
+						<p class="text">Не только китайского, но и местного производства!</p>
 					</li>
 
 				</ul>
 			</li>
 
-			<li>
-				<h2 class="slogan">Там есть мост дьявола</h2>
-				<p class="reason">- №2 -</p>
-				<p class="reason">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			<li class="features-list">
+
+				<h2 class="title">Там есть мост дьявола</h2>
+				<p class="text">- №2 -</p>
+				<p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				<img src="#" width="" height="" alt="Мост дьявола">
+
+			</li>
+
+			<li class="features-list">
+				
+				<h2 class="title">Небольшая площадь</h2>
+				<p class="text">- №3 -</p>
+				<p class="text">Все домтопримечательности находятся очень близко</p>
+
 			</li>
 
 			<li>
-				<h2 class="slogan">Небольшая площадь</h2>
-				<p class="reason">- №3 -</p>
-				<p class="reason">Все домтопримечательности находятся очень близко</p>
+					
+				<h2 class="title">Красивая дорога</h2>
+				<p class="text">- №4 -</p>
+				<p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				
 			</li>
 
 			<li>
-				<h2 class="slogan">Красивая дорога</h2>
-				<p class="reason">- №4 -</p>
-				<p class="reason">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-			</li>
 
-			<li>
-				<h2 class="slogan">Мало туристов</h2>
-				<p class="reason">- №5 -</p>
-				<p class="reason">Большинство едет в Гранд Каньон и толпится там</p>
+				<h2 class="title">Мало туристов</h2>
+				<p class="text">- №5 -</p>
+				<p class="text">Большинство едет в Гранд Каньон и толпится там</p>
+			
 			</li>
 
 		</ul>
 
 		<section class="appointment">
-			<h2>Заинтересовались?</h2>
-			<p class="appointment-call">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<a class="search" href="">Поиск гостиницы в Седоне</a>
+
+			<h2 class="appointment-call">Заинтересовались?</h2>
+			<p class="appointment-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<a class="appointment-label" href="#">Поиск гостиницы в Седоне</a>
+
 		</section>
 
-		<section class="search-form">
-			<p>Дата заезда</p>
-			<p>Дата выезда</p>
-			<p>Взрослые</p>
-			<p>Дети</p>
-			<button class="search-form">Найти</button>
-		</section>
+		<!--- не уверена в правитьности формы, скорее всего у нее должны быть классы и возможно дополнительная оболочка!-->
+
+		<form action="#" method="get">
+			<label for="date-in">Дата заезда:</label>
+			<input type="date" id="date-in" name="date-in" value="24 апреля 2017">
+			<label for="date-out">Дата выезда:</label>
+			<input type="date" id="date-out" name="date-out" value="4 июля 2017">
+			<label for="adults">Взрослые:</label>
+			<!--- не знаю как делать переключатель!-->
+			<label for="child">Дети:</label>
+			<!--- не знаю как делать переключатель!-->
+			<div class="button">
+				<input type="submit" value="Найти">
+			</div>
+		</form>
+
 
 		<section class="map">
-			<img src="map.jpg" width="" height="" alt="map">
+			<img src="map.jpg" width="" height="" alt="Карта Седоны">
 		</section>
 
 	</main>
@@ -106,9 +140,8 @@
 		<p class="contacts">
 			<a href="">#Visitsedona</a>
 		</p>
-
-		<div class="footer-social">
-			<ul>
+		
+			<ul class="footer-social">
 				<li>
 					<a class="social-button" href="#">Twitter</a>
 				</li>
@@ -120,8 +153,7 @@
 				</li>
 
 			</ul>
-			
-		</div> 
+		
 
 		<p class="footer-copyright">
 			<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
