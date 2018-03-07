@@ -8,7 +8,7 @@
 	<header class="main-header">
 		<nav class="nav">
 			<a class="nav-logo" href="index.html">
-				<img src="logo.jpg" width="" height="" alt="Логотип города Седона">
+				<img src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
 			</a>
 			<ul class="nav-list">
 				<li class="nav-item"><a href="info.html">Информация</a></li>
@@ -18,30 +18,50 @@
 			</ul>
 		</nav>
 	</header>
-
-	<main class="container">
+	<main class="content">
 
 		<section class="search-filter">
 		
 			<h1 class="visually-hidden">Форма поиска жилья</h1>
 
 			<h2 class="search-form">Инфраструктура:</h2>
-          <!-- Здесь будет форма а пока список -->
-			<ul>
-				<li>Бассейн</li>
-				<li>Парковка</li>
-				<li>Wi-Fi</li>
-			</ul>
-			<h2 class="search-form">Тип жилья:</h2>
-		  <!-- Здесь будет форма а пока список -->
-			<ul>
-				<li>Гостиница</li>
-				<li>Мотель</li>
-				<li>Апартаменты</li>
-			</ul>
-			<h2 class="search-form-price">Стоимость в сутки (Р):</h2>
-			<button class="search-form-price">Показать</button>
-		</section>
+
+				<form action="#" method="get">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<p>
+							<input type="checkbox" name="subscribe" id="subscribe-field-1" checked>
+							<label for="subscribe-field-1">Бассейн</label>
+						</p>
+						<p>
+							<input type="checkbox" name="subscribe" id="subscribe-field-2" >
+							<label for="subscribe-field-2">Парковка</label>
+						</p>
+						<p>
+							<input type="checkbox" name="subscribe" id="subscribe-field-3" >
+							<label for="subscribe-field-3">WI-FI</label>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-4" checked>
+							<label for="subscribe-field-4">Гостиница</label>
+						</p>
+						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-5" checked>
+							<label for="subscribe-field-5">Мотель</label>
+						</p>
+						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-6" checked>
+							<label for="subscribe-field-6">Апартаменты</label>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость в сутки</legend>
+						<input type="range" id="dayscount" name="dayscount" min="0" max="3000" step="1">
+					</fieldset>
+					<div class="buttons">
+						<input type="submit" value="Показать">
+					</div>
+				</form> 
 
 		<section class="search-result">
 			<p class="search-result-caption">Найдено: 3</p>
@@ -70,7 +90,7 @@
 		<h2 class="visually-hidden">Каталог найденных отелей</h2>
 
 		<article class="hotel-item">
-			<img src="#" width="" height="" alt="Amara resort & spa">
+			<img src="img/Amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
 			<h3 class="hotel-title">Amara resort & spa</h3>
 			<span class="">Гостиница</span>
 			<span class="price">От 4000 Р.</span>
@@ -81,7 +101,7 @@
 		</article>
 
 		<article class="hotel-item">
-			<img src="#" width="" height="" alt="Desert Quali Inn">
+			<img src="img/Desert Quali Inn.jpg" width="135" height="90" alt="Desert Quali Inn">
 			<h3 class="hotel-title">Desert Quali Inn</h3>
 			<span class="">Гостиница</span>
 			<span class="price">От 3000 Р.</span>
@@ -92,7 +112,7 @@
 		</article>
 
 		<article class="hotel-item">
-			<img src="#" width="" height="" alt="Villas at poco diablo">
+			<img src="img/Villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
 			<h3 class="hotel-title">Villas at poco diablo</h3>
 			<span class="">Гостиница</span>
 			<span class="price">От 2000 Р.</span>
