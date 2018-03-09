@@ -14,7 +14,7 @@
 				 <li class="nav-item"><a href="info.html">Информация</a></li>
 				 <li class="nav-item"><a href="media.html">Фото и видео</a></li>
 				 <li class="nav-item"><a href="map.html">Карта штата</a></li>
-				 <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
+				 <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
 			 </ul>
 		  </nav>
 	  </header>
@@ -80,20 +80,38 @@
 		 <section class="appointment">
 			 <h2 class="appointment-title">Заинтересовались?</h2>
 			 <p class="appointment-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			 <a class="appointment-btn" href="#">Поиск гостиницы в Седоне</a>
+			 <button class="popup" type="button">Поиск гостиницы в Седоне</button>
 		 </section>
-		 <!--- форму пока не делаю!
-		 <form action="#" method="get">
-			<label for="date-in">Дата заезда:</label>
-			<input type="date" id="date-in" name="date-in" value="24 апреля 2017">
-			<label for="date-out">Дата выезда:</label>
-			<input type="date" id="date-out" name="date-out" value="4 июля 2017">
-			<label for="adults">Взрослые:</label>
-			<label for="child">Дети:</label>
-			<div class="button">
-			<input type="submit" value="Найти">
-			</div>
-		 </form> -->
+		 <section class="search-form">
+		 	<form action="https://echo.htmlacademy.ru" method="get">
+		 		<h3 class="search-form-title visually-hidden">Поиск по дате</h3>
+		 		<ul>
+		 			<li class="search-item">
+		 				<label for="date-in">Дата заезда:</label>
+		 				<input type="date" id="date-in" name="date-in" value="24 апреля 2017">
+		 			</li>
+		 			<li class="search-item">
+		 				<label for="date-out">Дата выезда:</label>
+		 				<input type="date" id="date-out" name="date-out" value="4 июля 2017">
+		 			</li>
+		 			<li class="search-item">
+		 				<label for="adults">Взрослые:</label>
+		 				<input type="number" name="number" id="adults" value="2">
+		 				<button class="plus" type="button">+</button>
+		 				<button class="minus" type="button">-</button>
+		 			</li>
+		 			<li class="search-item">
+		 				<label for="child">Дети:</label>
+		 				<input type="number" name="number" id="child" value="0">
+		 				<button class="plus" type="button">+</button>
+		 				<button class="minus" type="button">-</button>
+		 			</li>
+		 		</ul>	
+				<div class="button">
+					<input type="submit" value="Найти">
+				</div>
+			</form> 
+		 </section>
 		 <section class="map">
 			 <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
 		 </section>
@@ -104,13 +122,13 @@
 		  </p>
 		  <ul class="social">
 			 <li>
-				 <a class="social-button" href="#">Twitter</a>
+				 <a class="social-button" href="https://twitter.com/" aria-label="Твиттер"></a>
 			 </li>
 			 <li>
-				 <a class="social-button" href="#">Facebook</a>
+				 <a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
 			 </li>
 			 <li>
-				 <a class="social-button" href="#">Youtube</a>
+				 <a class="social-button" href="https://youtube.com/" aria-label="Ютуб"></a>
 			 </li>
 		  </ul>
 		  <p class="footer-copyright">

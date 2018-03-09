@@ -24,43 +24,46 @@
 		
 			<h1 class="visually-hidden">Форма поиска жилья</h1>
 
-			<h2 class="search-form">Инфраструктура:</h2>
-
-				<form action="#" method="get">
+				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
 						<legend>Инфраструктура:</legend>
-						<p>
-							<input type="checkbox" name="subscribe" id="subscribe-field-1" checked>
-							<label for="subscribe-field-1">Бассейн</label>
-						</p>
-						<p>
-							<input type="checkbox" name="subscribe" id="subscribe-field-2" >
-							<label for="subscribe-field-2">Парковка</label>
-						</p>
-						<p>
-							<input type="checkbox" name="subscribe" id="subscribe-field-3" >
-							<label for="subscribe-field-3">WI-FI</label>
-						</p>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-1" checked>
+								<label for="subscribe-field-1">Бассейн</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-2" >
+								<label for="subscribe-field-2">Парковка</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-3" >
+								<label for="subscribe-field-3">WI-FI</label>
+							</li>
+						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Тип жилья:</legend>
-						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-4" checked>
-							<label for="subscribe-field-4">Гостиница</label>
-						</p>
-						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-5" checked>
-							<label for="subscribe-field-5">Мотель</label>
-						</p>
-						<p>	<input type="checkbox" name="subscribe" id="subscribe-field-6" checked>
-							<label for="subscribe-field-6">Апартаменты</label>
-						</p>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-4" checked>
+								<label for="subscribe-field-4">Гостиница</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-5" checked>
+								<label for="subscribe-field-5">Мотель</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="subscribe" id="subscribe-field-6" checked>
+								<label for="subscribe-field-6">Апартаменты</label>
+							</li>
+						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Стоимость в сутки</legend>
 						<input type="range" id="dayscount" name="dayscount" min="0" max="3000" step="1">
 					</fieldset>
-					<div class="buttons">
-						<input type="submit" value="Показать">
-					</div>
+					<button type="submit" class="filter-button button">Показать</button>
 				</form> 
 
 		<section class="search-result">
@@ -68,21 +71,21 @@
 			<h4>Сортировка:</h4>
 			<ul class="search-result-list">
 				<li class="search-result-item">
-					<a href="">По цене</a>
+					<button type="button">По цене</button>
 				</li>
 				<li class="search-result-item">
-					<a href="">По типу</a>
+					<button type="button">По типу</button>
 				</li>
 				<li class="search-result-item">
-					<a href="">По рейтингу</a>
+					<button type="button">По рейтингу</button>
 				</li>
 			</ul>
 			<ul class="arrow-list">
 				<li class="arrow-item">
-					<a class="arrow arrow-up" href="#"></a>
+					<button class="arrow arrow-up" type="button"></button>
 				</li>
 				<li class="arrow-item">
-					<a class="arrow arrow-down" href="#"></a>
+					<button class="arrow arrow-down" type="button"></button>
 				</li>
 			</ul>
 		</section>
@@ -123,19 +126,19 @@
 		</article>
 	</main>
 
-	<footer class="main-footer">
+	<footer class="footer">
 		<p class="contacts">
 			<a href="">#Visitsedona</a>
 		</p>
-		<ul class="footer-social">
+		<ul class="social">
 			<li>
-				<a class="social-button" href="#">Twitter</a>
+				<a class="social-button" href="https://twitter.com/" aria-label="Твиттер"></a>
 			</li>
 			<li>
-				<a class="social-button" href="#">Facebook</a>
+				<a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
 			</li>
 			<li>
-				<a class="social-button" href="#">Youtube</a>
+				<a class="social-button" href="https://youtube.com/" aria-label="Ютуб"></a>
 			</li>
 		</ul>
 		<p class="footer-copyright">
