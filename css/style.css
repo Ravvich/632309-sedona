@@ -25,7 +25,6 @@ img {
 .nav {
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
 	font-weight: 700;
 	color: #000000;
 }
@@ -66,9 +65,11 @@ img {
 .showplace {
 	color: #ffffff;
 	background-color: #81b3d2;
+	text-align: center;
 }
 
 .features-item {
+	text-align: center;
 	background-image: url(img/home.svg);
 }
 
@@ -78,6 +79,7 @@ img {
 }
 
 .attraction {
+	text-align: center;
 	background-color: #eeeeee;
 }
 
@@ -89,10 +91,6 @@ img {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
-}
-
-.appointment button {
-	text-transform: none;
 }
 
 .appointment a {
@@ -118,10 +116,6 @@ img {
 
 .search-list {
 	list-style: none;
-}
-
-.search-item text{
-	text-transform: none;
 }
 
 input {
@@ -186,6 +180,14 @@ input {
 	font-weight: 700;
 	text-decoration: uppercase;
 	color: #000000;
+}
+
+.contacts {
+	text-align: center;
+}
+
+.footer-copyright {
+	text-align: center;
 }
 
 .filter fieldset {
