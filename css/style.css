@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
@@ -27,6 +27,7 @@ img {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+	background-color: #ffffff;
 }
 
 .nav-list {
@@ -234,6 +235,7 @@ input {
 	vertical-align: middle;
 	text-transform: uppercase;
 	border: #ffffff solid 2px;
+	background-color: #81b3d2;
 }
 
 .filter button:hover {
