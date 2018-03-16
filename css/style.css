@@ -51,6 +51,7 @@ img {
 
 .slogan-title {
 	font-size: 21px;
+	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 }
@@ -68,6 +69,12 @@ img {
 	text-align: center;
 }
 
+.features-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
 .features-item {
 	text-align: center;
 	background-image: url(img/home.svg);
@@ -75,6 +82,7 @@ img {
 
 .wrap h2 {
 	font-size: 21px;
+	line-height: 26px;
 	font-weight: 700;
 }
 
@@ -186,6 +194,10 @@ input {
 	text-align: center;
 }
 
+.social {
+	list-style: none;
+}
+
 .footer-copyright {
 	text-align: center;
 }
@@ -194,25 +206,31 @@ input {
 	border: none;
 }
 
+.search-filter {
+	background-color: #81b3d2;
+}
+
 .filter legend {
 	font-size: 16px;
 	line-height: 21px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
-	background-color: #81b3d2;
 }
 
 .filter ul {
 	list-style: none;
 	color: #ffffff;
-	background-color: #81b3d2;
+}
+
+.filter-option {
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .filter button {
 	font: inherit;
 	text-align: center;
 	color: #ffffff;
-	background-color: #81b3d2;
 	vertical-align: middle;
 	text-transform: uppercase;
 	border: #ffffff solid 2px;
@@ -228,7 +246,6 @@ input {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
-	background-color: #ffffff;
 }
 
 .search-result h4 {
@@ -236,7 +253,6 @@ input {
 	line-height: 18px;
 	font-weight: 400;
 	color: #000000;
-	background-color: #ffffff;
 }
 
 .search-result {
@@ -251,43 +267,38 @@ input {
 	list-style: none;
 }
 
-.price {
-	color: #81b3d2;
-	background-color: #ffffff;
+.search-result-link {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
 }
 
-.tipe,
-.rating,
 .arrow-up,
 .arrow-down {
-	color: #000000;
-	opacity: 0,3;
-	background-color: #ffffff;
+	color: rgba(0, 0, 0, 0.3);
 }
 
-.tipe:hover,
-.rating:hover {
+.active {
 	color: #81b3d2;
-	background-color: #ffffff;
+	border: none;
 }
 
-.tipe:focus,
-.rating:focus {
+.search-result-link:hover {
+	color: #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.search-result-link:focus {
 	color: #000000;
-	background-color: #ffffff;
 }
 
 .arrow-up:hover,
 .arrow-down:hover {
 	color: #000000;
-	text-decoration: underline;
-	background-color: #ffffff;
 }
 
 .arrow-up:focus,
 .arrow-down:focus {
 	color: #81b3d2;
-	background-color: #ffffff;
 }
 
 .hotel-title {
