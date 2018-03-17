@@ -373,6 +373,72 @@ input {
 	background-color: #f2f2f2;
 }
 
+.nav {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-logo {
+	position: absolute;
+	left: 50%;
+}
+
+.nav-list {
+	display: flex;
+	min-height: 56px;
+}
+
+.nav-item {
+	width: 300px;
+}
+
+.content {
+	min-width: 1200px;
+}
+
+.slogan-title {
+	padding-top: 61px;
+	padding-bottom: 38px;
+	padding-left: 380px;
+	padding-right: 380px;
+}
+
+.slogan-text {
+	padding-bottom: 56px;
+	padding-left: 355px;
+	padding-right: 356px;
+}
+
+.wrap {
+	margin: 0;
+	padding: 0;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 332px;
+}
+
+.features-item {
+	width: 400px;
+}
+
+.attraction-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 256px;
+}
+
+.attraction-item {
+	width: 400px;
+}
+
+
+
 
 
 
