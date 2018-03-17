@@ -19,7 +19,11 @@ img {
 }
 
 .visually-hidden {
-
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .nav {
@@ -373,46 +377,56 @@ input {
 	background-color: #f2f2f2;
 }
 
+
+.conteiner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .nav {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .nav-logo {
-	position: absolute;
-	left: 50%;
+	width: 138px;
+	height: 70px;
 }
 
 .nav-list {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: -70px;
 	min-height: 56px;
 }
 
 .nav-item {
-	width: 300px;
+	width: 20%;
 }
 
-.content {
-	min-width: 1200px;
+.nav-item:nth-child(1) {
+	margin-left: 72px;
 }
 
-.slogan-title {
-	padding-top: 61px;
-	padding-bottom: 38px;
-	padding-left: 380px;
-	padding-right: 380px;
+.nav-item:nth-child(2) {
+	margin-right: 11%;
 }
 
-.slogan-text {
-	padding-bottom: 56px;
-	padding-left: 355px;
-	padding-right: 356px;
+.banner {
+	margin-bottom: 61px;
 }
 
 .wrap {
 	margin: 0;
 	padding: 0;
+	margin-top: 60px;
 }
 
 .features-list {
