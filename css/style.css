@@ -108,6 +108,9 @@ img {
 
 .appointment a {
 	display: block;
+	margin: 0;
+	padding: 0;
+	margin-left: 316px;
 	width: 568px;
 	padding-top: 35px;
 	padding-bottom: 33px;
@@ -381,6 +384,7 @@ input {
 .conteiner {
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .nav {
@@ -392,6 +396,9 @@ input {
 }
 
 .nav-logo {
+	position: absolute;
+	top: 0px;
+	margin: 0 auto;
 	width: 138px;
 	height: 70px;
 }
@@ -402,21 +409,16 @@ input {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	margin-top: -70px;
+	justify-content: center;
 	min-height: 56px;
 }
 
 .nav-item {
-	width: 20%;
-}
-
-.nav-item:nth-child(1) {
-	margin-left: 72px;
+	width: 240px;
 }
 
 .nav-item:nth-child(3) {
-	margin-left: 244px;
+	margin-left: 240px;
 }
 
 .banner {
@@ -492,7 +494,84 @@ input {
 	margin-right: 70px;
 }
 
+.footer {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 120px;
+}
 
+.filter {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 217px;
+	background-image: url(img/grey-back.jpg);
+}
+
+fieldset.first-column,
+fieldset.middle-column,
+.last-column {
+	margin: 0;
+	padding: 0;
+}
+
+.first-column ul,
+.middle-column  ul,
+.last-column fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset.first-column {
+	margin-left: 72px;
+}
+
+fieldset.middle-column {
+	margin-left: 115px;
+}
+
+.last-column {
+	margin-left: auto;
+	margin-right: 74px;
+}
+
+.catalog {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.hotel-item {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	min-height: 151px;
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.hotel-item img {
+	margin-left: 72px;
+}
+
+.description {
+	margin-left: 30px;
+}
+
+.rating {
+	margin-left: auto;
+	margin-right: 73px;
+}
 
 
 
