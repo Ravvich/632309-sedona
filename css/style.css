@@ -1,3 +1,11 @@
+html {
+	 box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	 box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -59,6 +67,10 @@ img {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.slogan-text {
+	line-height: 26px;
 }
 
 .wrap,
@@ -219,6 +231,7 @@ input {
 	background-image: url(../img/grey-black.jpg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .filter legend {
@@ -245,7 +258,7 @@ input {
 	vertical-align: middle;
 	text-transform: uppercase;
 	border: #ffffff solid 2px;
-	background-color: #81b3d2;
+	background-color: rgba(127, 155, 188, 0);
 }
 
 .filter button:hover {
@@ -384,24 +397,22 @@ input {
 }
 
 
-.conteiner {
+.container {
 	width: 1200px;
 	margin: 0 auto;
+	position: relative;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .nav {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	position: relative;
 }
 
 .nav-logo {
 	position: absolute;
 	top: 0px;
-	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 138px;
 	height: 70px;
 }
@@ -411,9 +422,8 @@ input {
 	padding: 0;
 	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	min-height: 56px;
+	padding: 15px 0;
 }
 
 .nav-item {
@@ -429,10 +439,13 @@ input {
 	margin-bottom: 61px;
 }
 
+.slogan {
+	margin-bottom: 57px;
+}
+
 .wrap {
 	margin: 0;
 	padding: 0;
-	margin-top: 60px;
 }
 
 .original {
@@ -440,7 +453,6 @@ input {
 	padding: 0;
 	display: flex;
 	width: 100%;
-	min-height: 256px;
 }
 
 .original-item-left {
@@ -452,7 +464,6 @@ input {
 	padding: 0;
 	display: flex;
 	width: 100%;
-	min-height: 332px;
 }
 
 .features-item {
@@ -464,7 +475,6 @@ input {
 	padding: 0;
 	display: flex;
 	width: 100%;
-	min-height: 256px;
 }
 
 .showplace-item-right{
@@ -480,7 +490,6 @@ input {
 	width: 100%;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 256px;
 	margin-bottom: 52px;
 }
 
@@ -498,15 +507,32 @@ input {
 	margin-right: 70px;
 }
 
+.appointment-text {
+	padding-bottom: 52px;
+}
+
 .footer {
 	margin: 0;
-	padding: 0;
+	padding: 36px 101px 36px 132px;
 	display: flex;
 	width: 100%;
 	align-items: center;
 	justify-content: space-around;
-	min-height: 120px;
 }
+
+.footer.main {
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.contacts,
+.social,
+.footer-copyright {
+	margin: 0;
+	padding: 0;
+}
+
 
 form.filter {
 	margin: 0;
@@ -515,7 +541,7 @@ form.filter {
 	width: 100%;
 	align-items: center;
 	justify-content: flex-start;
-	min-height: 217px;
+	padding: 31px 74px 31px 72px;
 }
 
 fieldset.first-column,
@@ -525,6 +551,18 @@ fieldset.middle-column,
 	padding: 0;
 }
 
+fieldset.first-column {
+	width: 255px;
+}
+
+fieldset.middle-column {
+	width: 470px;
+}
+
+.last-column {
+	width: 314px;
+}
+
 .first-column ul,
 .middle-column  ul,
 .last-column fieldset {
@@ -532,17 +570,43 @@ fieldset.middle-column,
 	padding: 0;
 }
 
-fieldset.first-column {
-	margin-left: 72px;
-}
-
-fieldset.middle-column {
-	margin-left: 115px;
-}
-
 .last-column {
 	margin-left: auto;
-	margin-right: 74px;
+}
+
+.search-result {
+	margin: 0;
+	padding: 31px 72px;
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.search-result-caption {
+	margin: 0;
+	padding: 0;
+	width: 135px;
+}
+
+.search-result-navigation {
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+	width: 680px;
+
+}
+
+.search-result-arrow {
+	margin: 0;
+	padding: 0;
+	width: 241px;
+}
+
+.search-result-navigation h4,
+.search-result-list,
+.search-result-item {
+	margin: 0;
+	padding: 0;
 }
 
 .catalog {
@@ -558,23 +622,35 @@ fieldset.middle-column {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	min-height: 151px;
 	width: 100%;
+	padding: 30px 72px;
 	border-bottom: 1px solid #f2f2f2;
 }
 
-.hotel-item img {
-	margin-left: 72px;
-}
-
 .description {
-	margin-left: 30px;
+	width: 680px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .rating {
 	margin-left: auto;
-	margin-right: 73px;
 }
+
+div.description {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.hotel-title {
+	margin: 0;
+}
+
+
+
+
 
 
 

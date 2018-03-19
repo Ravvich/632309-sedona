@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="conteiner">
+		<div class="container">
 		<header class="main-header">
 			<nav class="nav">
 				<a class="nav-logo" href="index.html">
@@ -71,26 +71,30 @@
 			</section>
 			<section class="search-result">
 				<p class="search-result-caption">Найдено: 3</p>
-				<h4>Сортировка:</h4>
-				<ul class="search-result-list">
-					<li class="search-result-item">
-						<a href="#" class="search-result-link active">По цене</a> 
-					</li>
-					<li class="search-result-item">
-						<a href="#" class="search-result-link">По типу</a>
-					</li>
-					<li class="search-result-item">
-						<a href="#" class="search-result-link">По рейтингу</a>
-					</li>
-				</ul>
-				<ul class="arrow-list">
-					<li class="arrow-item">
-						<a href="" class="arrow-up"></a> 
-					</li>
-					<li class="arrow-item">
-						<a href="" class="arrow-down"></a>
-					</li>
-				</ul>
+				<div class="search-result-navigation">
+					<h4>Сортировка:</h4>
+					<ul class="search-result-list">
+						<li class="search-result-item">
+							<a href="#" class="search-result-link active">По цене</a> 
+						</li>
+						<li class="search-result-item">
+							<a href="#" class="search-result-link">По типу</a>
+						</li>
+						<li class="search-result-item">
+							<a href="#" class="search-result-link">По рейтингу</a>
+						</li>
+					</ul>
+				</div>
+				<div class="search-result-arrow">
+					<ul class="arrow-list">
+						<li class="arrow-item">
+							<a href="" class="arrow-up"></a> 
+						</li>
+						<li class="arrow-item">
+							<a href="" class="arrow-down"></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<h2 class="visually-hidden">Каталог найденных отелей</h2>
 			<div class="catalog">
@@ -98,10 +102,14 @@
 				<img src="img/Amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
 				<div class="description">
 					<h3 class="hotel-title">Amara resort & spa</h3>
-					<span class="hotel-tipe">Гостиница</span>
-					<span class="price">От 4000 Р.</span>
-					<a class="button-info" href="">Подробнее</a>
-					<a class="button-book" href="">Забронировать</a>
+					<div class="information-item">
+						<span class="hotel-tipe">Гостиница</span>
+						<span class="price">От 4000 Р.</span>
+					</div>
+					<div class="buttons-item">
+						<a class="button-info" href="">Подробнее</a>
+						<a class="button-book" href="">Забронировать</a>
+					</div>
 				</div>
 				<div class="rating">
 					<span class="content"><!-- звездочки!--></span>
@@ -112,10 +120,14 @@
 				<img src="img/Desert Quali Inn.jpg" width="135" height="90" alt="Desert Quali Inn">
 				<div class="description">
 					<h3 class="hotel-title">Desert Quali Inn</h3>
-					<span class="hotel-tipe">Мотель</span>
-					<span class="price">От 3000 Р.</span>
-					<a class="button-info" href="">Подробнее</a>
-					<a class="button-book" href="">Забронировать</a>
+					<div class="information-item">
+						<span class="hotel-tipe">Мотель</span>
+						<span class="price">От 3000 Р.</span>
+					</div>
+					<div class="buttons-item">
+						<a class="button-info" href="">Подробнее</a>
+						<a class="button-book" href="">Забронировать</a>
+					</div>
 				</div>
 				<div class="rating">
 					<span class="content"><!-- звездочки!--></span>
@@ -126,10 +138,14 @@
 				<img src="img/Villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
 				<div class="description">
 					<h3 class="hotel-title">Villas at poco diablo</h3>
-					<span class="hotel-tipe">Апартаменты</span>
-					<span class="price">От 2000 Р.</span>
-					<a class="button-info" href="">Подробнее</a>
-					<a class="button-book" href="">Забронировать</a>
+					<div class="information-item">
+						<span class="hotel-tipe">Апартаменты</span>
+						<span class="price">От 2000 Р.</span>
+					</div>
+					<div class="buttons-item">
+						<a class="button-info" href="">Подробнее</a>
+						<a class="button-book" href="">Забронировать</a>
+					</div>
 				</div>
 				<div class="rating">
 					<span class="content"><!-- звездочки!--></span>
