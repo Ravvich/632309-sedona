@@ -457,17 +457,56 @@ input {
 
 .original-item-left {
 	width: 400px;
+	padding-top: 46px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .features-list {
+	position: relative;
 	margin: 0;
 	padding: 0;
+	padding-top: 140px;
 	display: flex;
 	width: 100%;
 }
 
 .features-item {
 	width: 400px;
+}
+
+.features-item:nth-child(1)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: 162px;
+	width: 75px;
+	height: 72px;
+	background-image: url(../img/home.svg);
+	background-repeat: no-repeat;
+}
+
+.features-item:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -32px;
+	width: 74px;
+	height: 70px;
+	background-image: url(../img/food.svg);
+	background-repeat: no-repeat;
+}
+
+.features-item:nth-child(3)::before {
+	content: "";
+	position: absolute;
+	top: 60px;
+	left: 965px;
+	width: 64px;
+	height: 76px;
+	background-image: url(../img/souvenir.svg);
+	background-repeat: no-repeat;
 }
 
 .showplace {
@@ -480,12 +519,17 @@ input {
 .showplace-item-right{
 	width: 400px;
 	order: 1;
+	padding-left: 49px;
+	padding-top: 49px;
+	padding-right: 49px;
 }
 
 
 .attraction-list {
 	margin: 0;
 	padding: 0;
+	padding-top: 46px;
+	padding-bottom: 64px;
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -648,6 +692,11 @@ div.description {
 	margin: 0;
 }
 
+h2.original-title,
+h2.showplace-title {
+	margin: 0;
+	padding: 0;
+}
 
 
 
