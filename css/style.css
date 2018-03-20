@@ -120,9 +120,9 @@ img {
 
 .appointment a {
 	display: block;
-	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
 	padding: 0;
-	margin-left: 316px;
 	width: 568px;
 	padding-top: 35px;
 	padding-bottom: 33px;
@@ -419,7 +419,6 @@ input {
 
 .nav-list {
 	margin: 0;
-	padding: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -460,6 +459,11 @@ input {
 	padding-top: 46px;
 	padding-left: 60px;
 	padding-right: 60px;
+}
+
+.original-item-right,
+.showplace-item-left {
+	width: 800px;
 }
 
 .features-list {
@@ -537,27 +541,17 @@ input {
 	margin-bottom: 52px;
 }
 
-.attraction-item:nth-child(1) {
-	width: 208px;
-	margin-left: 95px;
-}
-
-.attraction-item:nth-child(2) {
-	width: 262px;
-}
-
-.attraction-item:nth-child(3) {
-	width: 260px;
-	margin-right: 70px;
+.attraction-item {
+	width: 400px;
 }
 
 .appointment-text {
-	padding-bottom: 52px;
+	margin-bottom: 52px;
 }
 
 .footer {
 	margin: 0;
-	padding: 36px 101px 36px 132px;
+	padding: 36px 0px;
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -575,6 +569,8 @@ input {
 .footer-copyright {
 	margin: 0;
 	padding: 0;
+	width: 400px;
+	text-align: center;
 }
 
 
@@ -671,21 +667,17 @@ fieldset.middle-column {
 	border-bottom: 1px solid #f2f2f2;
 }
 
-.description {
-	width: 680px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
 .rating {
-	margin-left: auto;
+	width: 241px;
+	text-align: right;
 }
 
 div.description {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 680px;
+	padding-left: 30px;
 }
 
 .hotel-title {
@@ -698,6 +690,32 @@ h2.showplace-title {
 	padding: 0;
 }
 
+a.button-info {
+	display: inline-block;
+	padding: 5px 16px;
+	margin-right: 4px;
+}
+
+a.button-book {
+	display: inline-block;
+	padding: 5px 14px;
+}
+
+span.hotel-tipe {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+}
+
+span.price {
+	display: inline-block;
+	width: 142px;
+	height: 27px;
+}
+
+h3.hotel-title {
+	margin-bottom: 6px;
+}
 
 
 
