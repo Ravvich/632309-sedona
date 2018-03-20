@@ -23,15 +23,26 @@ a {
 
 img {
 	max-width: 100%;
+	height: auto;
 	display: block;
 }
 
-.visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .nav {
@@ -120,8 +131,8 @@ img {
 
 .appointment a {
 	display: block;
-	margin-left: 50%;
-	transform: translateX(-50%);
+	margin-left: auto;
+	margin-right: auto; 
 	padding: 0;
 	width: 568px;
 	padding-top: 35px;
@@ -326,6 +337,11 @@ input {
 	color: #81b3d2;
 }
 
+.img {
+	width: 135px;
+	height: 90px;
+}
+
 .hotel-title {
 	font-size: 21px;
 	line-height: 26px;
@@ -464,6 +480,7 @@ input {
 .original-item-right,
 .showplace-item-left {
 	width: 800px;
+	height: 256px;
 }
 
 .features-list {
@@ -581,7 +598,7 @@ form.filter {
 	width: 100%;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 31px 74px 31px 72px;
+	padding: 31px 72px 31px 72px;
 }
 
 fieldset.first-column,
@@ -693,12 +710,14 @@ h2.showplace-title {
 a.button-info {
 	display: inline-block;
 	padding: 5px 16px;
-	margin-right: 4px;
+	margin-right: 2px;
+	width: 110px;
 }
 
 a.button-book {
 	display: inline-block;
 	padding: 5px 14px;
+	width: 142px;
 }
 
 span.hotel-tipe {
