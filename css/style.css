@@ -736,6 +736,69 @@ h3.hotel-title {
 	margin-bottom: 6px;
 }
 
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+
+ul.social {
+	display: flex;
+	width: 150px;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-button:hover {
+	background-color: #669ec0; 
+}
+
+.social-button:active {
+	background-color: #5496bd; 
+}
+
+.social-button:active path {
+	opacity: 0.3;
+}
+
+.footer-copyright {
+	position: relative;
+}
+
+.button-website::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 115px;
+	height: 41px;
+	background-image: url(../img/logo-htmlacademy.svg);
+	background-repeat: no-repeat;
+}
+
+.search-form {
+	position: relative;
+}
+
+.search-form form {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 568px;
+	height: 395px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffffff; 
+}
+
 
 
 
