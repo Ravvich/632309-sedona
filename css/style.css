@@ -65,8 +65,9 @@ input[type="radio"].visually-hidden {
 	color: #81b3d2;
 }
 
-.nav-list a:focus {
+.nav-list a:active {
 	color: #000000;
+	opacity: 0.3;
 }
 
 .slogan {
@@ -76,6 +77,7 @@ input[type="radio"].visually-hidden {
 .slogan-title {
 	font-size: 21px;
 	line-height: 26px;
+	margin-bottom: 28px;
 	font-weight: 700;
 	color: #000000;
 }
@@ -97,10 +99,16 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
+.original-number {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
 .features-title {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	margin-bottom: 28px;
 }
 
 .features-item {
@@ -110,7 +118,7 @@ input[type="radio"].visually-hidden {
 
 .wrap h2 {
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 21px;
 	font-weight: 700;
 }
 
@@ -219,14 +227,6 @@ input {
 	font-weight: 700;
 	text-decoration: uppercase;
 	color: #000000;
-}
-
-.social {
-	list-style: none;
-}
-
-.footer-copyright {
-	text-align: center;
 }
 
 .filter fieldset {
@@ -451,7 +451,7 @@ input {
 }
 
 .slogan {
-	margin-bottom: 57px;
+	margin-bottom: 50px;
 }
 
 .wrap {
@@ -483,7 +483,7 @@ input {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 72px;
+	padding-bottom: 66px;
 	padding-top: 140px;
 	display: flex;
 	width: 100%;
@@ -557,6 +557,11 @@ input {
 	padding-right: 49px;
 }
 
+.showplace-number {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
 
 .attraction-list {
 	margin: 0;
@@ -597,8 +602,17 @@ input {
 	padding-right: 70px;
 }
 
+.attraction-number {
+	margin-top: 24px;
+	margin-bottom: 22px;
+}
+
 .appointment-text {
-	margin-bottom: 52px;
+	margin-bottom: 50px;
+}
+
+a.button {
+	padding-top: 32px;
 }
 
 .footer {
@@ -625,6 +639,77 @@ input {
 	text-align: center;
 }
 
+.social {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	height: 48px;
+	align-items: center;
+	justify-content: center;
+}
+
+.social li {
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2; 
+}
+
+.social li:nth-child(1) {
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.social li:hover {
+	background-color: #669ec0;
+}
+
+.social li:active {
+	background-color: #5496bd;
+	fill: 0.3;
+}
+
+.social li:nth-child(2) {
+	margin-left: 6px;
+	margin-right: 6px;
+	background-image: url(../img/fb-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.social li:nth-child(3) {
+	background-image: url(../img/youtube.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.footer-copyright {
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.button-website {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 115px;
+	height: 41px;
+}
+
+.button-website:hover path {
+	fill: #81b3d2;
+}
+
+.button-website:active path {
+	fill: #bdbbbc;
+}
+
+.search-form {
+	position: relative;
+}
 
 form.filter {
 	margin: 0;
@@ -742,6 +827,11 @@ h2.showplace-title {
 	padding: 0;
 }
 
+.original-item-left,
+.showplace-item-right {
+	padding-bottom: 20px;
+}
+
 a.button-info {
 	display: inline-block;
 	padding: 5px 16px;
@@ -769,60 +859,6 @@ span.price {
 
 h3.hotel-title {
 	margin-bottom: 6px;
-}
-
-.social-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 46px;
-	height: 48px;
-	background-color: #81b3d2;
-}
-
-ul.social {
-	display: flex;
-	width: 150px;
-	list-style: none;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.social-button:hover {
-	background-color: #669ec0; 
-}
-
-.social-button:active {
-	background-color: #5496bd; 
-}
-
-.social-button:active path {
-	opacity: 0.3;
-}
-
-.footer-copyright {
-	position: relative;
-	vertical-align: middle;
-}
-
-.button-website {
-	position: absolute;
-	width: 115px;
-	height: 41px;
-	top: 50%;
-	transform: translateY(-50%);	
-}
-
-.button-website:hover path {
-	fill: #81b3d2;
-}
-
-.button-website:active path {
-	fill: #bdbbbc;
-}
-
-.search-form {
-	position: relative;
 }
 
 .search-form form {
