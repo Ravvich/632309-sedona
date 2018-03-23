@@ -395,14 +395,13 @@ li.filter-option:nth-child(3) {
 	background-position: 0 0;
 }
 
-.filter-input-checkbox + label:hover::before {
-	background-color: red; 
+.filter-input-checkbox:checked + label:disabled::before {
+	background-image: url(../img/checkbox-on-disabled.svg);
 }
 
-
-
-
-
+.filter-input-checkbox + label:disabled::before {
+	background-image: url(../img/checkbox-off-disabled.svg);
+}
 
 .last-column {
   width: 314px;
@@ -583,6 +582,7 @@ li.filter-option:nth-child(3) {
 
 .search-result-link:active {
 	color: #000000;
+	border: none;
 }
 
 .active {
@@ -1042,8 +1042,8 @@ a.social-button-twitter::after {
 }
 
 a.social-button-twitter:active::after,
-a.social-button-twitter:active::after,
-a.social-button-twitter:active::after {
+a.social-button-facebook:active::after,
+a.social-button-youtube:active::after {
 	opacity: 0.3;
 }
 
