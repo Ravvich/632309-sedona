@@ -417,8 +417,8 @@ li.filter-option:nth-child(3) {
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
 
   background: #ababab;
   border: 8px solid #ffffff;
@@ -721,12 +721,6 @@ div.description {
 
 
 
-
-
-
-
-
-
 /*    index   */
 
 
@@ -760,6 +754,17 @@ div.description {
 .showplace-item-left {
 	width: 800px;
 	height: 256px;
+}
+
+h2.original-title,
+h2.showplace-title {
+	margin: 0;
+	padding: 0;
+}
+
+.original-item-left,
+.showplace-item-right {
+	padding-bottom: 20px;
 }
 
 .features-list {
@@ -1101,73 +1106,40 @@ a.social-button-youtube::after {
 .arrow-list {
 	margin: 0;
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 6px;
 	display: flex;
 	list-style: none;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.arrow-item:nth-child(1) {
+.arrow-item {
 	width: 11px;
 	height: 10px;
-	position: relative;
-	background-image: url(../img/icon-up-dir.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
-.arrow-item:nth-child(2) {
+.arrow-item:last-child {
 	width: 11px;
 	height: 10px;
-	position: relative;
 	margin-left: 12px;
-	background-image: url(../img/icon-down-dir.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
-.arrow-item:nth-child(1):hover {
-	background-image: url(../img/icon-up-dir-hover.svg);
+.arrow-item:first-child:active path {
+	fill: #81b3d2;
 }
 
-.arrow-item:nth-child(2):hover {
-	background-image: url(../img/icon-down-dir-hover.svg);
+.arrow-item:hover path {
+	fill: #000000;
 }
 
-.arrow-item:nth-child(1):active {
-	background-image: url(../img/icon-up-dir-active.svg);
-}
-
-.arrow-item:nth-child(2):active {
-	background-image: url(../img/icon-down-dir-active.svg);
-}
-
-.arrow-item.active {
-	background-image: url(../img/icon-down-dir-active.svg);
-}
-
-
-
-
-
-
-
-
-
-h2.original-title,
-h2.showplace-title {
-	margin: 0;
-	padding: 0;
-}
-
-.original-item-left,
-.showplace-item-right {
-	padding-bottom: 20px;
+.active path {
+	fill: #81b3d2;
 }
 
 
 /*  index форма поиска жилья */
+
+
 
 
 .search form {
@@ -1237,9 +1209,6 @@ h2.showplace-title {
 	border: none;
 	background-color: #f2f2f2;
 }
-
-
-
 
 .search-item input:hover {
 	background-color: #ebebeb; 
