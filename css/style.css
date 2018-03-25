@@ -504,13 +504,12 @@ li.filter-option:nth-child(3) {
 	background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label:disabled::before {
+.filter-input:disabled::before {
 	background-image: url(../img/checkbox-on-disabled.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	
 }
 
-.filter-input-checkbox + label:disabled::before {
+.filter-input-checkbox:disabled::before {
 	background-image: url(../img/checkbox-off-disabled.svg);
 }
 
