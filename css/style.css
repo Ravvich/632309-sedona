@@ -15,6 +15,7 @@ body {
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
+	background-color: #f2f2f2; 
 }
 
 a {
@@ -110,13 +111,18 @@ input[type="radio"].visually-hidden {
 
 .banner {
 	margin-bottom: 61px;
+	background-color: #ffffff;
 }
 
 /* слоган */
 
 .slogan {
+	width: 500px;
 	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .slogan-title {
@@ -179,6 +185,7 @@ input[type="radio"].visually-hidden {
 
 .appointment {
 	text-align: center;
+	background-color: #ffffff;
 }
 
 .appointment-title {
@@ -480,18 +487,6 @@ li.filter-option:nth-child(3) {
 	display: block;
 }
 
-.filter-input-checkbox:checked + label::before {
-	content: "";
-	position: absolute;
-	left: -40px;
-	top: 0;
-	width: 27px;
-	height: 23px;
-	background-image: url(../img/checkbox-on.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -500,16 +495,22 @@ li.filter-option:nth-child(3) {
 	width: 23px;
 	height: 23px;
 	background-image: url(../img/checkbox-off.svg);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
-.filter-input:disabled::before {
-	background-image: url(../img/checkbox-on-disabled.svg);
-	
+.filter-input-checkbox:checked + label::before {
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-input-checkbox:disabled::before {
+.filter-input-checkbox:checked:disabled + label::before {
+	background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filter-input-checkbox:disabled + label::before {
 	background-image: url(../img/checkbox-off-disabled.svg);
 }
 
@@ -1051,60 +1052,55 @@ div.description {
 .social li {
 	width: 46px;
 	height: 48px;
-	margin-right: 6px; 
-	border: 23px solid #81b3d2; 
+	margin-right: 6px;
 }
 
-a.social-button-twitter::after {
+.social-button {
+	display: block;
+	width: 46px;
+	height: 48px; 
+	background-color: #81b3d2; 
+}
+
+.social-button::after {
 	content: "";
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	background-repeat: no-repeat;
+}
+
+.social-button-twitter::after {
 	left: 35%;
 	width: 17px;
 	height: 15px;
 	background-image: url(../img/twitter.svg);
-	background-repeat: no-repeat;
 }
-
-.social li:hover {
-	border: 23px solid #669ec0;
-}
-
-.social li:active {
-	border: 23px solid #5496bd;
-}
-
-a.social-button-twitter:active::after,
-a.social-button-facebook:active::after,
-a.social-button-youtube:active::after {
-	opacity: 0.3;
-}
-
-a.social-button-facebook::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+.social-button-facebook::after {
 	left: 48%;
 	width: 12px;
 	height: 22px;
 	background-image: url(../img/fb-icon.svg);
-	background-repeat: no-repeat;
 }
 
-a.social-button-youtube::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+.social-button-youtube::after {
 	left: 60%;
 	width: 20px;
 	height: 16px;
 	background-image: url(../img/youtube.svg);
-	background-repeat: no-repeat;
 }
 
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:active {
+	background-color: #5496bd;
+} 
+
+.social-button:active::after {
+	opacity: 0.3;
+}
 
 .footer-copyright {
 	position: relative;
@@ -1139,7 +1135,7 @@ a.social-button-youtube::after {
 
 
 
-.search form {
+.modal form {
 	margin: 0;
 	padding: 55px;
 	display: flex;
@@ -1151,7 +1147,8 @@ a.social-button-youtube::after {
 	position: absolute;
 	left: 50%;
 	margin-left: -284px;
-	background-color: #ffffff; 
+	background-color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .search-list {
@@ -1171,9 +1168,9 @@ a.social-button-youtube::after {
 	padding: 0;
 	list-style: none;
 	display: flex;
-	width: 460px;
-	height: 38px;
 	justify-content: space-between;
+	width: 458px;
+	height: 38px;
 }
 
 .search-form {
@@ -1185,22 +1182,110 @@ a.social-button-youtube::after {
 	text-transform: uppercase;
 }
 
+.search-item {
+	display: flex;
+	width: 458px;
+}
+
+.search-item label {
+	display: block;
+	width: 112px;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+}
+
 .search-item input[type="text"] {
 	box-sizing: border-box;
 	width: 346px;
-	padding: 14px 200px 13px 13px;
+	height: 38px;
+	padding: 14px 40px 13px 13px;
 	border: none;
 	background-color: #f2f2f2;
 }
 
-.calendar {
-	background-image: url(../img/calendar.svg);
-	background-position: 315px center;
-	background-repeat: no-repeat; 
+.search-item {
+	position: relative;
 }
 
-.search-item input[type="number"] {
+.search-item svg {
+	position: absolute;
+	left: 428px;
+	top: 8px;
+}
+
+.search-item path {
+	fill: #a9a9a9;
+}
+
+.search-item:hover path {
+	fill: #000000;
+}
+
+.search-item:active path {
+	fill: #8bb2cf;
+}
+
+.adults-item {
+	margin-right: 53px;
+}
+
+.last-row-item.adults-item {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 226px;
+	justify-content: flex-end;
+}
+
+.last-row-item.child-item {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 226px;
+	justify-content: flex-end;
+}
+
+.adults-item label {
+	width: 112px;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+}
+
+.child-item label {
+	width: 65px;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+}
+
+.adults-item button:hover svg line,
+.child-item button:hover svg line {
+	stroke: #000000;
+}
+
+.adults-item button:active svg line,
+.child-item button:active svg line {
+	stroke: #8bb2cf;
+}
+
+
+
+.last-row-item input[type="text"] {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.last-row-item button {
+	margin: 0;
+	padding: 0;
 	width: 38px;
 	height: 38px;
 	text-align: center;
@@ -1215,6 +1300,42 @@ a.social-button-youtube::after {
 .search-item input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
+}
+
+.search-item input::-webkit-input-placeholder,
+.last-row-item input::-webkit-input-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.search-item input::-moz-placeholder,
+.last-row-item input::-moz-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.search-item input:-moz-placeholder,
+.last-row-item input:-moz-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.search-item input:-ms-input-placeholder,      
+.last-row-item input:-ms-input-placeholder {
+font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .search-item button {
@@ -1236,9 +1357,9 @@ a.social-button-youtube::after {
 	display: block;
 	width: 458px;
 	padding-top: 19px;
-	padding-bottom: 20px;
+	padding-bottom: 18px;
 	font: inherit;
-	font-size: 19px;
+	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	vertical-align: middle;
