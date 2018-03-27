@@ -385,7 +385,7 @@ h2.showplace-title {
 	margin-bottom: 50px;
 }
 
-a.button {
+a.modal-button {
 	padding-top: 32px;
 }
 
@@ -1161,15 +1161,15 @@ div.description {
 	top: 8px;
 }
 
-li svg path {
+.search-item path {
 	fill: #a9a9a9;
 }
 
-li svg:hover path {
+.search-item:hover path {
 	fill: #000000;
 }
 
-li svg:active path {
+.search-item:active path {
 	fill: #8bb2cf;
 }
 
@@ -1202,6 +1202,7 @@ li svg:active path {
 }
 
 .child-item label {
+	display: block;
 	width: 65px;
 	margin: 0;
 	padding: 0;
@@ -1312,13 +1313,6 @@ li svg:active path {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
 }
-
-
-
-
-
-
-
 
 
 
