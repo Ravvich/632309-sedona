@@ -1314,6 +1314,14 @@ div.description {
 	background-color: #5496bd;
 }
 
+.modal {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+}
+
 
 
 
