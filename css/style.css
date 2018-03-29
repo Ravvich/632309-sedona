@@ -411,6 +411,9 @@ a.modal-button {
 
 .map {
 	z-index: 1;
+	background-image: url(img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .map iframe {
@@ -457,7 +460,7 @@ form.filter {
 	width: 1200px;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 28px 72px 20px 72px;
+	padding: 28px 72px 5px 72px;
 }
 
 fieldset.first-column,
@@ -894,7 +897,7 @@ div.information-item {
 
 h3.hotel-title {
 	margin-bottom: 6px;
-	margin-top: -8px;
+	margin-top: -5px;
 }
 
 .catalog {
@@ -938,6 +941,7 @@ span.rating-number {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-top: -5px;
 	justify-content: space-between;
 	align-items: center;
 	width: 92px;
