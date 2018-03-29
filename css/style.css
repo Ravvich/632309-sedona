@@ -170,7 +170,7 @@ input[type="radio"].visually-hidden {
 
 .attraction {
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	text-align: center;
 	background-color: #eeeeee;
 }
@@ -213,11 +213,11 @@ input[type="radio"].visually-hidden {
 	background-color: #766357;
 }
 
-.appointment a:hover {
+.modal-button:hover {
 	background-color: #604e43;
 }
 
-.appointment a:focus {
+.modal-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
@@ -398,8 +398,6 @@ ul.attraction-list {
 	margin-bottom: 22px;
 }
 
-
-
 .appointment-text {
 	margin-bottom: 50px;
 }
@@ -408,6 +406,14 @@ a.modal-button {
 	position: relative;
 	padding-top: 32px;
 	cursor: pointer;
+	z-index: 8;
+}
+
+.map {
+	z-index: 1;
+}
+
+.map iframe {
 	z-index: 2;
 }
 
@@ -496,6 +502,7 @@ li.filter-option {
 .filter-option label {
 	position: relative;
 	display: block;
+	cursor: pointer;
 }
 
 .filter-input-checkbox + label::before {
@@ -509,6 +516,7 @@ li.filter-option {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	cursor: pointer;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1231,13 +1239,13 @@ div.description {
 	padding-top: 8px;
 }
 
-.adults-item button:hover svg line,
-.child-item button:hover svg line {
+.minus:hover line,
+.plus:hover line {
 	stroke: #000000;
 }
 
-.adults-item button:active svg line,
-.child-item button:active svg line {
+.minus:active line,
+.plus:active line {
 	stroke: #8bb2cf;
 }
 
@@ -1326,6 +1334,7 @@ div.description {
 	color: #ffffff;
 	background-color: #81b3d2;
 	border: none;
+	cursor: pointer;
 }
 
 .button input:hover {
