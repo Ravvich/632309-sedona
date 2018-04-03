@@ -956,14 +956,14 @@ a.button-info {
 	width: 110px;
 	padding: 3px 16px;
 	margin-right: 2px;
-	text-align: center;
+	vertical-align: middle;
 }
 
 a.button-book {
 	display: inline-block;
 	width: 142px;
 	padding: 3px 14px;
-	text-align: center;
+	vertical-align: middle;
 }
 
 span.hotel-tipe {
@@ -971,14 +971,14 @@ span.hotel-tipe {
 	width: 110px;
 	height: 27px;
 	margin-right: 2px;
-	text-align: left;
+	vertical-align: middle;
 }
 
 span.price {
 	display: inline-block;
 	width: 142px;
 	height: 27px;
-	text-align: left;
+	vertical-align: middle;
 }
 
 div.information-item {
